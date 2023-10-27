@@ -1285,6 +1285,15 @@ section {
   color: #47b2e4;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 @media (max-width: 768px) {
   .about, .skills, .services, .portfolio, .contact {
     padding-left: 30px;
