@@ -1,0 +1,45 @@
+.my-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 40px;
+}
+
+.my-services h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.my-services p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.services .service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    border: 2px solid #e2e2e2;
+    padding: 15px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.services .service .service-icon, .services .service h4 {
+    font-size: 25px;
+}
+
+.services .service p {
+    font-size: 18px;
+}
