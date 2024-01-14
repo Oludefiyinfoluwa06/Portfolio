@@ -2,19 +2,23 @@ import React from 'react';
 import logo from '../assets/img/OFTO.png';
 import { Link } from 'react-router-dom';
 
-const NavMenu = ({ openMenu }) => {
+const NavMenu = ({ openMenu, closeMenu }) => {
+    const handleCloseMenu = () => {
+        closeMenu();
+    }
+    
     return (
         <div className='nav-menu'>
-            <div className={openMenu === true ? 'menu-img' : 'menu-img hidden'}>
+            <div className={openMenu ? 'menu-img' : 'menu-img hidden'}>
                 <img src={logo} alt="Logo" />
             </div>
-            <ul className={openMenu === true ? 'menu-item' : 'menu-item hidden'}>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/skills">Skills</Link></li>
-                <li><Link to="/services">Services</Link></li>
-                <li><Link to="/portfolio">Portfolio</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+            <ul className={openMenu ? 'menu-item' : 'menu-item hidden'}>
+                <li><Link to="/" onClick={handleCloseMenu}>Home</Link></li>
+                <li><Link to="/about" onClick={handleCloseMenu}>About</Link></li>
+                <li><Link to="/skills" onClick={handleCloseMenu}>Skills</Link></li>
+                <li><Link to="/services" onClick={handleCloseMenu}>Services</Link></li>
+                <li><Link to="/portfolio" onClick={handleCloseMenu}>Portfolio</Link></li>
+                <li><Link to="/contact" onClick={handleCloseMenu}>Contact</Link></li>
             </ul>
         </div>
     );

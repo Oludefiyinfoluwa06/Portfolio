@@ -7,8 +7,12 @@ import { RiMenu3Line } from 'react-icons/ri';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const handleOpenMenu = () => {
+    const handletoggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    }
+
+    const handleCloseMenu = () => {
+        setIsMenuOpen(false);
     }
 
     return (
@@ -18,11 +22,11 @@ const Navbar = () => {
                     <img src={logo} alt="Logo" />
                     <label>Olude Fiyinfoluwa</label>
                 </div>
-                <div className="menu-bar" onClick={handleOpenMenu}>
+                <div className="menu-bar" onClick={handletoggleMenu}>
                     <RiMenu3Line />
                 </div>
             </nav>
-            <NavMenu openMenu={isMenuOpen} />
+            <NavMenu openMenu={isMenuOpen} closeMenu={handleCloseMenu} />
         </>
     );
 }
