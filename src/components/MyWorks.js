@@ -49,7 +49,7 @@ const MyWorks = () => {
             id: 6,
             img: travel,
             info: "Front-end Travel website built using HTML, CSS",
-            glink: "https://github.com/Oludefiyinfoluwa06/ggnf/",
+            glink: "https://github.com/Oludefiyinfoluwa06/Frontend-Travel-Website/",
             wlink: "https://the-pearl-travel-and-tours.web.app/"
         }
     ];
