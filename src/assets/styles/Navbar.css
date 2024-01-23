@@ -108,3 +108,9 @@ nav .menu-bar {
         background: #81b3ff;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .logo label {
+        display: none;
+    }
+}
