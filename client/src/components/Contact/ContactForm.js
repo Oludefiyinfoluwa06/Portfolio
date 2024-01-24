@@ -12,7 +12,7 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const res = await axios.post('http://localhost:5000/', { name, email, message });
+            const res = await axios.post('https://oludefiyinfoluwa-server.vercel.app/', { name, email, message });
             setMsg(res.data.message);
             window.location.reload();
         } catch (err) {
