@@ -9,7 +9,7 @@ const Home = () => {
         <div className='hero'>
             <div className="hero-text">
                 <p>Hello, I am a</p>
-                <h3 style={{ color: 'blue' }}>Web Developer</h3>
+                <h3 className="typing-text" style={{ color: 'blue' }}>Web Developer</h3>
                 <p>Welcome to my digital playground, where innovation meets design and user experience. I specialize in translating visions into interactive and visually stunning web solutions</p>
                 <ul className="social-media">
                     <li><Link target='_blank' to="https://www.facebook.com/profile.php?id=100073669704664"><FaFacebook /></Link></li>
