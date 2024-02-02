@@ -18,22 +18,6 @@
 .hero-text h3 {
     font-size: 40px;
     text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 2px solid blue;
-    animation: type 6s infinite;
-}
-
-@keyframes type {
-    0% {
-        width: 0ch;
-    }
-    50% {
-        width: 12.5ch;
-    }
-    100% {
-        width: 0ch;
-    }
 }
 
 .hero .hero-img img {
