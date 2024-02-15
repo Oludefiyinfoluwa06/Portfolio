@@ -50,9 +50,6 @@
         min-height: calc(100vh - 70px);
         background: #81b3ff;
     }
-    .hero .hero-img {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 400px) {
