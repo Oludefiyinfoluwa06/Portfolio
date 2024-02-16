@@ -56,6 +56,30 @@
     border-radius: 8px;
 }
 
+.skill-img {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1000ms, transform 1000ms;
+    z-index: -1;
+}
+
+.my-skill {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1000ms, transform 1000ms;
+    z-index: -1;
+}
+
+.visible-img {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.visible-skills {
+    opacity: 1;
+    transform: translateX(0);
+}
+
 @media screen and (max-width: 600px) {
     .sk h3 {
         font-size: 30px;

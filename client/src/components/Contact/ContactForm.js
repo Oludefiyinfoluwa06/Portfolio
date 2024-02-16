@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const ContactForm = () => {
+const ContactForm = ({ forwardedRef }) => {
     const [name, setName] = useState();
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
@@ -25,7 +25,7 @@ const ContactForm = () => {
 
 
     return (
-        <form>
+        <form ref={forwardedRef}>
             <p style={ msg ? { position: 'fixed', top: 0, left: 0, padding: 10, width: '100%', background: 'green', color: '#fff', textAlign: 'center' } : { display: 'none' }}>{msg}</p>
             <div className="form-group">
                 <p style={ error ? { textAlign: 'center', color: '#FF9999', width: '100%' } : { display: 'none' }}>{error}</p>

@@ -1,61 +1,74 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { FaGithub, FaLink } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ggnf from '../assets/img/portfolio/ggnf.png';
 import hoobank from '../assets/img/portfolio/hoobank.png';
 import movieApp from '../assets/img/portfolio/movie-app.png';
 import niphal from '../assets/img/portfolio/niphal.png';
 import school from '../assets/img/portfolio/school.png';
-import travel from '../assets/img/portfolio/travel.webp';
+import otm from '../assets/img/portfolio/otm.png';
 
 const MyWorks = () => {
+    const workRef = useRef(null);
+    const location = useLocation();
+
+    useEffect(() => {
+        const work = workRef.current;
+
+        work.classList.remove('visible-work');
+
+        setTimeout(() => {
+            work.classList.add('visible-work');
+        }, 100);
+    }, [location.pathname]);
+
     const works = [
         {
             id: 1,
             img: ggnf,
-            info: "A child's foundation website built using HTML, CSS, JavaScript and PHP",
+            info: "Child Foundation's Website: HTML, CSS, JS, PHP",
             glink: "https://github.com/Oludefiyinfoluwa06/ggnf/",
             wlink: "https://ggnffoundation.com/"
         },
         {
             id: 2,
             img: hoobank,
-            info: "React banking web application project",
+            info: "React Banking Web App Project",
             glink: "https://github.com/Oludefiyinfoluwa06/hoobank/",
             wlink: ""
         },
         {
             id: 3,
             img: movieApp,
-            info: "Movie app built using react JS",
+            info: "React JS Movie App",
             glink: "https://github.com/Oludefiyinfoluwa06/movie-app/",
             wlink: ""
         },
         {
             id: 4,
             img: niphal,
-            info: "Niphal web design built using HTML, CSS",
+            info: "Niphal Web Design: HTML, CSS Project",
             glink: "https://github.com/Oludefiyinfoluwa06/niphal/",
-            wlink: "https://theniphalweb.web.app/"
+            wlink: "https://niphal.com.ng"
         },
         {
             id: 5,
             img: school,
-            info: "School website built using React JS",
+            info: "School Website: React JS Project",
             glink: "https://github.com/Oludefiyinfoluwa06/school-website/",
             wlink: "https://school-coe.web.app/"
         },
         {
             id: 6,
-            img: travel,
-            info: "Front-end Travel website built using HTML, CSS",
-            glink: "https://github.com/Oludefiyinfoluwa06/Frontend-Travel-Website/",
-            wlink: "https://the-pearl-travel-and-tours.web.app/"
+            img: otm,
+            info: "Task Management Web App",
+            glink: "https://github.com/Oludefiyinfoluwa06/Task-Management-App/",
+            wlink: "https://ofto-task-manager.vercel.app/"
         }
     ];
 
     return (
-        <div className='works'>
+        <div className='works' ref={workRef}>
             {works.map(work => (
                 <div className="work" key={work.id}>
                     <img src={work.img} alt="Work" />

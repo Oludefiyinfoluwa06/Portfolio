@@ -65,6 +65,9 @@ form {
     padding: 15px;
     height: 100%;
     max-width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1000ms, transform 1000ms;
 }
 
 form .form-group {
@@ -109,4 +112,20 @@ form button {
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.contact-address {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1000ms, transform 1000ms;
+}
+
+.visible-contact-address {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.visible-contact-form {
+    opacity: 1;
+    transform: translateX(0);
 }

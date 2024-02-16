@@ -23,6 +23,9 @@
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 20px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1000ms, transform 1000ms;
 }
 
 .works .work {
@@ -60,4 +63,9 @@
 
 .work .info .links a:hover {
     color: blue;
+}
+
+.visible-work {
+    opacity: 1;
+    transform: translateY(0);
 }

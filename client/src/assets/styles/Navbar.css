@@ -25,7 +25,7 @@ nav .logo {
 nav .menu-bar {
     font-size: 30px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 101;
     background-color: transparent;
 }
 
@@ -39,7 +39,6 @@ nav .menu-bar {
 }
 
 .nav-menu .menu-img {
-    /* height: 100%; */
     background-color: rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(5px);
     display: flex;
@@ -53,6 +52,7 @@ nav .menu-bar {
     border: none;
     border-bottom: 1px solid #fff;
     transition: .5s;
+    z-index: 100;
 }
 
 .menu-img img {
@@ -80,6 +80,7 @@ nav .menu-bar {
     border: none;
     border-top: 1px solid #fff;
     transition: .5s;
+    z-index: 100;
 }
 
 .menu-item.hidden {
@@ -101,12 +102,6 @@ nav .menu-bar {
     border: none;
     color: blue;
     transition: .5s;
-}
-
-@media screen and (max-width: 800px) {
-    nav {
-        background: #81b3ff;
-    }
 }
 
 @media screen and (max-width: 400px) {

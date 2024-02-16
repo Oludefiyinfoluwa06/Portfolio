@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skill = () => {
+const Skill = ({ forwardedRef }) => {
     const skills = [
         {
             id: 1,
@@ -40,7 +40,7 @@ const Skill = () => {
     ];
 
     return (
-        <div className='my-skill'>
+        <div className='my-skill' ref={forwardedRef}>
             {skills.map(skill => (
                 <div className="skill" key={skill.id}>
                     <div className="skill-head">
