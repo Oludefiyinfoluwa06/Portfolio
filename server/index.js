@@ -48,7 +48,6 @@ app.post('/', async (req, res) => {
 
         await transporter.sendMail(mailOptions, (err, info) => {
             if (err) {
-                console.log(err);
                 return res.status(500).json({ 'error': 'An error occured' });
             }
 
