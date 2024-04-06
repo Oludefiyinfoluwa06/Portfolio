@@ -1,33 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Olude Fiyinfoluwa's portfolio. You can explore my diverse portfolio of creative projects and technical expertise. Discover a showcase of innovative design, web development, and more. See how I turn ideas into stunning digital experiences. Let's bring your vision to life together." name="description">
-    <meta content="Web developer, Front-end developer, Backend developer, Full stack developer" name="keywords">
-    <meta content="Olude Fiyinfoluwa" name="author">
-    <meta
-      property="og:description"
-      content="You can explore my diverse portfolio of creative projects and technical expertise. Discover a showcase of innovative design, web development, and more. See how I turn ideas into stunning digital experiences. Let's bring your vision to life together." />
-    <meta property="og:title" content="Olude Fiyinfoluwa" />
 
-    <!-- Favicons -->
-    <link href="OFTO.png" rel="icon">
-    <link href="OFTO.png" rel="apple-touch-icon">
-    <title>Olude Fiyinfoluwa</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>OFTO - Olude Fiyinfoluwa</title>
+  <meta content="Olude Fiyinfoluwa's portfolio. You can explore my diverse portfolio of creative projects and technical expertise. Discover a showcase of innovative design, web development, and more. See how I turn ideas into stunning digital experiences. Let's bring your vision to life together." name="description">
+  <meta content="Web developer, Front-end developer, Backend developer, Full stack developer" name="keywords">
+  <meta content="Olude Fiyinfoluwa" name="author">
+  <!-- <meta
+    property="og:image"
+    content="assets/img/logo.png" /> -->
+  <meta
+    property="og:description"
+    content="You can explore my diverse portfolio of creative projects and technical expertise. Discover a showcase of innovative design, web development, and more. See how I turn ideas into stunning digital experiences. Let's bring your vision to life together." />
+  <meta property="og:title" content="Olude Fiyinfoluwa" />
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <!-- <h1 class="logo me-auto"><a href="https://oludefiyin.web.app/">Ofto</a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Crafting Digital Experience</h1>
+          <h2>Welcome to my digital playground, where innovation meets design and user experience. I specialize in translating visions into interactive and visually stunning web solutions</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Me Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <h1>Who am I?</h1>
+            <p>
+              My name is Olude Fiyinfoluwa. I am a dedicated full stack developer and my journey has been shaped by an unwavering commitment to excellence, refined by a robust portfolio of personal and academic projects, showcasing my expertise in creating outstanding web solutions
+            </p>
+            <p>
+              I breathe life into ideas through code and creativity. With a strong foundation in web development and a commitment to crafting exceptional digital experiences, I'm on a mission to make the web a more engaging and user-friendly place.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              Full stack developers play a crucial role in web development, and as one, my objectives revolve around creating engaging, visually appealing and user-friendly websites. Some of my objectives include:
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> <b>User-Focused Design</b>: Creating user interfaces and experiences that prioritize user needs, accessibility, and usability.</li>
+              <li><i class="ri-check-double-line"></i> <b>Responsive Web Design</b>: Ensure that websites are responsive and function well on various devices and screen sizes, providing a consistent user experience.</li>
+              <li><i class="ri-check-double-line"></i> <b>Code Efficiency</b>: Write clean, efficient, and maintainable code to ensure the longevity of projects.</li>
+              <li><i class="ri-check-double-line"></i> <b>Problem Solving</b>: Address and troubleshoot front-end issues, bugs, and challenges that may arise during development.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <img src="assets/img/skills.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Expertise and Abilities</h3>
+            <p class="fst-italic">
+              In my journey, I've cultivated a diverse skill set that enables me to excel in web development. My technical toolbox equips me to create engaging and user-friendly digital solutions. Explore my skills below.
+            </p>
+
+            <div class="skills-content">
+
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">CSS <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Bootstrap <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">Tailwind CSS <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">60%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">React JS <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <span class="skill">PHP <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>I offer a range of services designed to elevate your online presence. From crafting visually stunning websites to optimizing user experiences, my expertise is your gateway to a captivating and user-friendly digital landscape. Explore how I can help bring your web projects to life.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-globe"></i></div>
+              <h4>Web development Expertise</h4>
+              <p>I specialize in creating user-friendly websites, breathing life into designs with a robust blend of HTML, CSS, JavaScript, React JS and PHP. With a deep commitment to delivering top-notch web solutions, I bring your digital vision to reality.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Seamless Responsive Design</h4>
+              <p>I bring expertise in crafting websites that effortlessly adapt to diverse devices and screen sizes, guaranteeing a uniform and impeccable user experience. Your audience will enjoy a flawless journey across all platforms.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4>Proactive Website Maintenance</h4>
+              <p>My commitment extends beyond the initial build. I provide ongoing website maintenance and updates to keep your digital presence secure, functional, and contemporary. Trust me to safeguard your online assets.</p>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-user"></i></div>
+              <h4>Collaborative Team Player</h4>
+              <p>I thrive on collaboration, seamlessly integrating into teams alongside developers, designers, and stakeholders. Together, we transform ideas into reality, ensuring project success and client satisfaction.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-start">
+            <h3>Let's Create Together</h3>
+            <p>Ready to bring your digital project to life? Whether you have a project in mind, need a consultation, or simply want to connect, I'm here to help. Get in touch, and let's embark on a journey of innovation and creativity.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Explore a curated selection of projects that showcase my skills, creativity, and dedication as a full stack developer. Each entry is a testament to my passion for creating exceptional digital experiences. Dive in and witness the results of my web development journey.</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/school.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>School Website</h4>
+              <p>School website written in <br />React JS</p>
+              <a href="https://school-coe.web.app" class="details-link" title="School Website link"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/portfolio/niphal_consultants.png" class="img-fluid" alt="" height="400px"></div>
+            <div class="portfolio-info">
+              <h4>Niphal Consultation</h4>
+              <p>Niphal Consultants web design <br />using HTML, CSS</p>
+              <a href="https://theniphalconsultants.web.app/" class="details-link" title="Niphal Consultants link"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/movie-app.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Movie App</h4>
+              <p>Movie app that has a search feature to filter through a list of movies, written in react JS</p>
+              <a href="https://github.com/Oludefiyinfoluwa06/Movie-App.git" class="details-link" title="Github link"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/ggnf.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>GGNF Foundation</h4>
+              <p>A children's foundation website <br />using HTML, CSS, JavaScript and PHP</p>
+              <a href="http://ggnffoundation.com/" class="details-link" title="Website Link"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/portfolio/hoobank.png" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Hoobank</h4>
+              <p>React banking web application project</p>
+              <a href="https://github.com/Oludefiyinfoluwa06/Hoobank.git" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/portfolio/travel.webp" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Travel website</h4>
+              <p>Travel website written in HTML, CSS</p>
+              <a href="https://the-pearl-travel-and-tours.web.app/" class="details-link" title="Travel Website link"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>I'm eager to hear from you. Whether you have questions, project inquiries, or just want to say hello, feel free to get in touch. Use the contact form below or find me on social media. I look forward to connecting and exploring new opportunities together.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Police Housing Estate, Kurudu, FCT - Abuja</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>oludefiyinfoluwa06@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+234 815 231 4660</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3941.344520025749!2d7.547231674112149!3d8.940365791117484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0fc59fb78423%3A0x37883bf5b77c10e4!2sPolice%20Housing%20Estate%20Kurudu!5e0!3m2!1sen!2sng!4v1697665257066!5m2!1sen!2sng" width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="https://formsubmit.io/send/39b9fae6-d311-440d-9db3-42ab6579901c" method="post" class="form" id="contactform">
+              <input name="_redirect" type="hidden" id="name" value="https://oludefiyin.web.app/">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ofto</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <span>Olude Fiyinfoluwa</span>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/olude-fiyinfoluwa-089634259/" class="bx bxl-linkedin"></a>
+          <a href="https://github.com/Oludefiyinfoluwa06" class="bx bxl-github"></a>
+          <a href="https://twitter.com/OludeFiyin06" class="bx bxl-twitter"></a>
+          <a href="https://www.instagram.com/timothyolude/" class="bx bxl-instagram"></a>
+          <a href="https://www.facebook.com/profile.php?id=100073669704664" class="bx bxl-facebook"></a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
