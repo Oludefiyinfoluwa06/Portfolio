@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res) => res.send('Hello world!'));
 
 app.post('/', async (req, res) => {
-    const { name, email, message } = req.body;
+    const { name, email, subject, message } = req.body;
 
     if (!name || !email || !message) {
         return res.status(400).json({ 'error': 'Input fields cannot be empty' });
@@ -42,7 +42,7 @@ app.post('/', async (req, res) => {
         const mailOptions = {
             from: email,
             to: 'oludefiyinfoluwa06@gmail.com',
-            subject: 'You just received an email from your website',
+            subject: subject,
             html: emailBody
         }
 
