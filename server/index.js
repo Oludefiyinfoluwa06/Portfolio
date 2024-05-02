@@ -1,5 +1,4 @@
 const express = require('express');
-const validator = require('validator');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 require('dotenv').config();
@@ -15,14 +14,6 @@ app.get('/', (req, res) => res.send('Hello world!'));
 
 app.post('/', async (req, res) => {
     const { name, email, subject, message } = req.body;
-
-    if (!name || !email || !message) {
-        return res.status(400).json({ 'error': 'Input fields cannot be empty' });
-    }
-
-    if (!validator.isEmail(email)) {
-        return res.status(406).json({ 'error': 'Please enter a valid email' });
-    }
 
     try {
         const emailBody = `
@@ -48,14 +39,14 @@ app.post('/', async (req, res) => {
 
         await transporter.sendMail(mailOptions, (err, info) => {
             if (err) {
-                return res.status(500).json({ 'error': 'An error occured' });
+                return res.json({ 'error': 'An error occured' });
             }
 
-            return res.status(200).json({ 'message': 'Email sent successfully' });
+            return res.json({ 'message': 'Email sent successfully' });
         });
     } catch (error) {
         console.log(error);
-        return res.status(500).json({ 'error': error.message });
+        return res.json({ 'error': error.message });
     }
 });
 

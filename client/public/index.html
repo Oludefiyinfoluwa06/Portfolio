@@ -391,6 +391,7 @@
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form class="form" id="contactform">
               <div id="success-msg"></div>
+              <div id="error-msg"></div>
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -461,9 +462,18 @@
     const messageInput= document.querySelector('#message');
 
     const successMsg = document.getElementById('success-msg');
+    const errorMsg = document.getElementById('error-msg');
 
     submitBtn.addEventListener('click', async (e) => {
       e.preventDefault();
+
+      errorMsg.innerText = '';
+      errorMsg.classList.remove('alert');
+      errorMsg.classList.remove('alert-danger');
+
+      successMsg.innerText = '';
+      successMsg.classList.remove('alert');
+      successMsg.classList.remove('alert-danger');
 
       const name = nameInput.value;
       const email = emailInput.value;
@@ -471,6 +481,24 @@
       const message = messageInput.value;
 
       submitBtn.innerText = 'Loading...';
+      
+      if (!name || !email || !subject || !message) {
+        errorMsg.innerText = 'Input fields cannot be empty';
+        errorMsg.classList.add('alert');
+        errorMsg.classList.add('alert-danger');
+        submitBtn.innerText = 'Send Message';
+        return;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (emailRegex.test(email) === false) {
+        errorMsg.innerText = 'Enter a valid email';
+        errorMsg.classList.add('alert');
+        errorMsg.classList.add('alert-danger');
+        submitBtn.innerText = 'Send Message';
+        return;
+      }
 
       try {
         const response = await fetch('https://oludefiyinfoluwa-server.vercel.app/', {
